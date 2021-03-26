@@ -15,10 +15,13 @@ public class LoggingExceptionServiceByClient{
 
     public static void main(String[] args) throws NullPointerException {
         try{
-            throw new NullPointerException();
-        }catch(NullPointerException e){
+            throw new ExtendedMyException("error", 10);
+        }catch(Exception e){
             logException(e);
-            //e.printStackTrace();
+            System.out.println(e.getMessage());
+            System.out.println(e.getLocalizedMessage());
+            e.printStackTrace();
         }
     }
+
 }
