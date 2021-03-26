@@ -1,3 +1,5 @@
+package simple;
+
 public class InheritingMyException {
     public static void f() throws MyException{
         System.out.println("Throw MyException from f()");

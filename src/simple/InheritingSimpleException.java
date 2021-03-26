@@ -1,3 +1,4 @@
+package simple;
 public class InheritingSimpleException {
     public void f() throws SimpleException {
         System.out.println("Throw SimpleException from f()");
