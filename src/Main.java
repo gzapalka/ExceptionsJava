@@ -1,4 +1,4 @@
-package simple;
+import simple.InheritingSimpleException;
 
 import java.util.Scanner;
 
